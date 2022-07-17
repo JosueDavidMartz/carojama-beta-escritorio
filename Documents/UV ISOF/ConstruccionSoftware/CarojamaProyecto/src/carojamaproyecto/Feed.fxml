@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="549.0000999999975" prefWidth="1078.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="carojamaproyecto.FeedController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" onMouseClicked="#clicAmigos" prefHeight="549.0001220703125" prefWidth="1078.0">
+      <children>
+        <Pane fx:id="paneMenuTop" layoutX="0.0" layoutY="0.0" prefHeight="41.0" prefWidth="1078.0" style="-fx-background-color:&#10;#2A4352&#10;">
+          <children>
+            <Label id="lbMensajes" fx:id="lbAmigos" layoutX="940.0" layoutY="13.0" onMouseClicked="#clicAmigos" prefWidth="56.0" text="Amigos" textFill="WHITE" />
+            <Label fx:id="lbMiPerfil" layoutX="1008.0" layoutY="13.0" onMouseClicked="#clicMiPerfil" prefWidth="56.0" text="Mi perfil" textFill="WHITE" />
+            <TextField fx:id="tfBuscar" layoutX="14.0" layoutY="10.0" prefWidth="200.0" promptText="Buscar" />
+            <Button fx:id="btnBuscar" layoutX="228.0" layoutY="11.0" mnemonicParsing="false" onAction="#clicBuscar" text="Buscar" />
+          </children>
+        </Pane>
+        <Pane fx:id="paneCentral" layoutX="110.0" layoutY="140.0" prefHeight="396.0001220703125" prefWidth="865.0" style="-fx-background-color:&#10;#CBCCCD" />
+        <Pane fx:id="panePublicar" layoutX="362.0" layoutY="63.0" prefHeight="60.0" prefWidth="355.0" style="-fx-background-color:&#10;#2A4352">
+          <children>
+            <TextField fx:id="tfPublicar" layoutX="14.0" layoutY="17.0" prefHeight="26.9609375" prefWidth="193.0" promptText="Comparte tu colección!" />
+            <Button fx:id="btnPublicar" layoutX="274.0" layoutY="20.0" mnemonicParsing="false" onAction="#clicPublicar" text="Publicar" />
+            <Button fx:id="btnSubirPublicar" layoutX="216.0" layoutY="20.0" mnemonicParsing="false" onAction="#clicSubir" text="Subir" />
+          </children>
+        </Pane>
+      </children>
+    </Pane>
+    <VBox fx:id="vbChat" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color:&#10;#E4E7E8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="921.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="259.0" />
+  </children>
+</AnchorPane>

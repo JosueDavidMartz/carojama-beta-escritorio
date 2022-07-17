@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="carojamaproyecto.ArticuloController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+      <children>
+        <Label fx:id="lbFotoArticulo" layoutX="27.0" layoutY="28.0" onMouseClicked="#clicFotoArticulo" prefHeight="122.9609375" prefWidth="143.0" style="-fx-background-color:&#10;#046268" text="" />
+        <TableView fx:id="tableVArticulo" layoutX="27.0" layoutY="174.0" prefHeight="173.0" prefWidth="556.0">
+          <columns>
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="91.0" text="Column X" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="116.0" text="Column X" />
+          </columns>
+        </TableView>
+        <Button fx:id="btnIntercambiar" layoutX="351.0" layoutY="365.0" mnemonicParsing="false" onAction="#clicIntercambiar" text="Intercambiar" />
+        <Button fx:id="btnComprar" layoutX="452.0" layoutY="365.0" mnemonicParsing="false" onAction="#clicComprar" text="Comprar" />
+        <Button fx:id="btnCerrar" layoutX="530.0" layoutY="365.0" mnemonicParsing="false" onAction="#clicCerrar" text="Cerrar" />
+        <Button fx:id="btnGuardar" layoutX="523.0" layoutY="18.0" mnemonicParsing="false" onAction="#clicGuardar" text="Guardar" />
+        <Label fx:id="lbLogoPrecio" layoutX="177.0" layoutY="31.0" text="Label" />
+        <Label fx:id="lbLogoIntercambio" layoutX="177.0" layoutY="55.0" text="Label" />
+        <Label fx:id="lbLogoEnviarPro" layoutX="177.0" layoutY="79.0" text="Label" />
+        <Label fx:id="lbValorPrecio" layoutX="212.0" layoutY="31.0" text="Label" />
+        <Label fx:id="lbValorIntercambio" layoutX="212.0" layoutY="55.0" prefWidth="123.0" text="Intercambio disponible" />
+        <Label fx:id="lbValorEnviarPro" layoutX="212.0" layoutY="79.0" onMouseClicked="#clicEnviarPropuesta" prefWidth="99.0" text="Enviar propuesta" />
+        <Label id="lbDatosGene" fx:id="lbDatosGen" layoutX="177.0" layoutY="104.0" text="Datos generales:" />
+        <Label fx:id="lbValorDatosGen" layoutX="274.0" layoutY="107.0" text="--" />
+        <Label fx:id="lbCantidad" layoutX="177.0" layoutY="129.0" text="Cantidad:" />
+        <Label fx:id="lbValorCantidad" layoutX="234.0" layoutY="129.0" text="0" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0000999999975" prefWidth="1078.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="carojamaproyecto.PerfilVisitaController">
+  <children>
+    <Pane id="pane" fx:id="paneMenuTop" layoutX="0.0" layoutY="0.0" prefHeight="41.0" prefWidth="1078.0" style="-fx-background-color:&#10;#2A4352&#10;">
+      <children>
+        <Button fx:id="btnBuscar" layoutX="224.0" layoutY="10.0" mnemonicParsing="false" onAction="#clicBuscar" text="Buscar" />
+        <Label fx:id="lbMiPerfil" layoutX="1000.0" layoutY="15.0" onMouseClicked="#clicMiPerfil" prefWidth="56.0" text="Mi perfil" textFill="WHITE" />
+        <Label id="lbMiPerfil" fx:id="lbAmigos" layoutX="920.0" layoutY="15.0" onMouseClicked="#clicAmigos" prefWidth="56.0" text="Amigos" textFill="WHITE" />
+        <Label id="lbMiPerfil" layoutX="860.0" layoutY="14.0" onMouseClicked="#clicFeed" prefWidth="37.0" text="Feed" textFill="WHITE" />
+      </children>
+    </Pane>
+    <TextField fx:id="tfBuscar" layoutX="10.0" layoutY="10.0" prefWidth="200.0" promptText="Buscar" />
+    <Pane fx:id="paneCabecera" layoutX="0.0" layoutY="41.0" onMouseClicked="#clicAmigos" prefHeight="140.0" prefWidth="1078.0" style="-fx-background-color:&#10;#F1F3F3" visible="true">
+      <children>
+        <Label id="lbNombre" fx:id="lbNombrePerfil" layoutX="170.0" layoutY="30.0" text="Nombre" />
+        <Label id="lbDescripcion" fx:id="lbSobreMi" layoutX="170.0" layoutY="54.0" text="Sobre mi" />
+        <Label fx:id="lbCorreo" layoutX="170.0" layoutY="80.0" text="Correo" />
+        <TextArea id="taFoto" fx:id="taFotoPerfil" layoutX="25.0" layoutY="22.0" prefHeight="94.0390625" prefWidth="122.0" wrapText="true" />
+        <Label fx:id="lbValorNombrePerfil" layoutX="228.0" layoutY="30.0" prefWidth="397.0" text="Label" />
+        <Label fx:id="lbValorSobreMi" layoutX="228.0" layoutY="54.0" prefWidth="397.0" text="Label" />
+        <Label fx:id="lbValorCorreo" layoutX="228.0" layoutY="80.0" prefWidth="397.0" text="Label" />
+        <Button fx:id="btnAgregar" layoutX="966.0" layoutY="20.0" mnemonicParsing="false" onAction="#clicAgregarAmigo" prefWidth="89.0" text="Agregar" />
+        <Button fx:id="btnEnviarMensaje" layoutX="956.0" layoutY="85.0" mnemonicParsing="false" onAction="#clicEnviarMensaje" text="Enviar mensaje" />
+        <Button fx:id="btnSeguir" layoutX="966.0" layoutY="54.0" mnemonicParsing="false" onAction="#clicSeguirUsuario" prefWidth="89.0" text="Seguir" />
+      </children>
+    </Pane>
+    <ScrollPane fx:id="paneScrollPrincipal" disable="false" focusTraversable="false" layoutX="-2.0" layoutY="210.0" prefHeight="342.0" prefWidth="866.0" style="-fx-background-color:&#10;#CED3D6" visible="true">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="368.0" prefWidth="863.0" visible="false" />
+      </content>
+    </ScrollPane>
+    <ScrollPane layoutX="864.0" layoutY="234.0" prefHeight="233.0" prefWidth="214.0">
+      <content>
+        <AnchorPane id="Content" fx:id="scrollPaneSecundario" minHeight="0.0" minWidth="0.0" onMouseClicked="#clicAmigos" prefHeight="232.0" prefWidth="213.0" style="-fx-background-color:&#10;#587180" />
+      </content>
+    </ScrollPane>
+    <Pane fx:id="paneBotonVentas" layoutX="864.0" layoutY="467.0" prefHeight="83.0" prefWidth="214.0" style="-fx-background-color:&#10;#587180">
+      <children>
+        <Button fx:id="btnVentas" layoutX="63.0" layoutY="31.0" mnemonicParsing="false" onAction="#clicBotonVentas" prefWidth="89.0" text="botonVentas" />
+      </children>
+    </Pane>
+    <Pane fx:id="paneTextoColecciones" layoutX="864.0" layoutY="181.0" prefHeight="53.0" prefWidth="213.0" style="-fx-background-color:&#10;#587180">
+      <children>
+        <Label fx:id="lbColecciones" layoutX="46.0" layoutY="12.0" prefHeight="29.0" prefWidth="109.0" text="Colecciones" textAlignment="CENTER">
+          <font>
+            <Font size="20.0" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+    <Pane fx:id="paneMenuBar" layoutX="-2.0" layoutY="181.0" prefHeight="29.0" prefWidth="866.0" style="-fx-background-color:&#10;#2A4352">
+      <children>
+        <MenuBar fx:id="menuBarCategorias" layoutX="0.0" layoutY="0.0" prefHeight="29.0" prefWidth="866.0">
+          <menus>
+            <Menu mnemonicParsing="false" text="Grupos">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Categorias" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Categorias">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Delete" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Subcategorias">
+              <items>
+                <MenuItem mnemonicParsing="false" text="About" />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+      </children>
+    </Pane>
+    <VBox fx:id="vbChat" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color:&#10;#E4E7E8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="921.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="259.0" />
+  </children>
+</AnchorPane>

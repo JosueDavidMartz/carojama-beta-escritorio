@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="471.0" prefWidth="394.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="carojamaproyecto.RegistroNuevoUsuarioController">
+  <children>
+    <Pane id="paneLogin" layoutX="0.0" layoutY="0.0" prefHeight="471.0" prefWidth="395.0" style="-fx-background-color:&#10;#046268">
+      <children>
+        <TextField fx:id="tfNombre" layoutX="122.0" layoutY="163.0" prefHeight="20.9609375" prefWidth="163.0" promptText="Nombre (nick)*" />
+        <Label id="lbTitulo" layoutX="59.0" layoutY="18.0" prefHeight="26.961037499997474" prefWidth="289.0" text="CAROJAMA - crear nueva cuenta" textAlignment="CENTER" textFill="WHITE" textOverrun="CLIP">
+          <font>
+            <Font name="System Bold" size="18.0" />
+          </font>
+        </Label>
+        <Label fx:id="lbError" layoutX="27.0" layoutY="427.0" prefHeight="21.9609375" prefWidth="275.0001220703125" text="" textFill="#fff500">
+          <font>
+            <Font name="System Bold Italic" size="12.0" />
+          </font>
+        </Label>
+        <Button id="btnRegistrase" fx:id="btnRegistrarse" layoutX="146.0" layoutY="364.0" minHeight="16.960906982421875" mnemonicParsing="false" onAction="#clicRegistrar" prefHeight="43.960898535158776" prefWidth="114.0001220703125" text="Registrarse" textOverrun="CLIP">
+          <font>
+            <Font name="System Bold" size="16.0" />
+          </font>
+        </Button>
+        <Button fx:id="btnSalir" layoutX="320.0" layoutY="428.0" mnemonicParsing="false" onAction="#clicSalir" text="Salir" />
+        <TextField id="tfContraseña" fx:id="tfCorreo" layoutX="122.0" layoutY="232.0" prefHeight="20.9609375" prefWidth="163.0" promptText="Correo*" />
+        <TextField id="tfContraseña" fx:id="tfDescripcion" layoutX="122.0" layoutY="304.0" prefHeight="51.9609375" prefWidth="163.0" promptText="Sobre mi..." />
+        <TextField id="tfNombre" fx:id="tfEdad" layoutX="122.0" layoutY="199.0" prefHeight="20.9609375" prefWidth="76.0" promptText="Edad*" />
+        <ScrollPane fx:id="spFotoDePerfil" layoutX="155.0" layoutY="53.0" prefHeight="95.0" prefWidth="83.0001220703125">
+          <content>
+            <AnchorPane id="Content" fx:id="anchorPFotoPerfil" minHeight="0.0" minWidth="0.0" onMouseClicked="#clicSubirFoto" prefHeight="94.0" prefWidth="83.0001220703125" />
+          </content>
+        </ScrollPane>
+        <PasswordField fx:id="pfContraseña" layoutX="122.0" layoutY="266.0" prefWidth="163.00009999999747" promptText="Contraseña" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
